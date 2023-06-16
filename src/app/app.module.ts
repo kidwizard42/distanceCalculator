@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ApiInputComponent } from './api-input/api-input.component';
 
 const routes: Routes = [
+  { path: '', component: ManualInputsComponent },
   { path: 'manual', component: ManualInputsComponent },
   { path: 'api', component: ApiInputComponent },
   { path: '**', redirectTo: '/manual' },
