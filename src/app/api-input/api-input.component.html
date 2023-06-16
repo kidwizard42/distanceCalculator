@@ -1,0 +1,13 @@
+<main>
+  <p class="text">Place an address for each input.</p>
+  <!-- <p class="text">
+      <b> Example: </b> <b>Point A:</b> 42.37594669749891, -71.09872546640777
+    </p>
+    <p class="text"><b>Point B:</b> 42.36123468514171, -71.0983821436587</p>
+    <br /> -->
+  <div class="addressA"><label>Adress A: </label> <input #addressA /></div>
+  <div class="addressB"><label>Adress B: </label> <input #addressB /></div>
+  <button (click)="calculateHaversine()">Calculate</button>
+
+  <p #answer></p>
+</main>

@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+input {
+  width: 30%;
+  max-width: 450px;
+}
+
+.pointA {
+  margin-bottom: 30px;
+}
+
+button {
+  max-width: 80px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 10px;
+}
+
+label {
+  font-size: 18px;
+}
+
+p,
+span {
+  width: 65%;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
