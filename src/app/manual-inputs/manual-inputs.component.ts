@@ -33,6 +33,9 @@ export class ManualInputsComponent implements AfterViewInit {
       Number.isNaN(lon2)
     ) {
       alert('you have an invalid input. please try again');
+      this.answer.nativeElement.innerHTML =
+        'That was an invalid input, please try again';
+      return;
     }
 
     let R = 6371; // km
