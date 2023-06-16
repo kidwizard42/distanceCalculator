@@ -26,6 +26,15 @@ export class ManualInputsComponent implements AfterViewInit {
     let lat2 = parseFloat(arr2[0]);
     let lon2 = parseFloat(arr2[1]);
 
+    if (
+      Number.isNaN(lat1) ||
+      Number.isNaN(lon1) ||
+      Number.isNaN(lat2) ||
+      Number.isNaN(lon2)
+    ) {
+      alert('you have an invalid input. please try again');
+    }
+
     let R = 6371; // km
     //has a problem with the .toRad() method below.
     let x1 = lat2 - lat1;
